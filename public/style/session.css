@@ -1,0 +1,368 @@
+body{
+    background: linear-gradient(90deg,#151734 9%, #303472 68%,#151734 97%);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    color: white;
+}
+.col2{
+    border-right : #5DD62C 1px solid;
+    border-left : #5DD62C 1px solid;
+}
+.col1{
+    align-items: center;
+    margin-bottom: 160px;
+}
+.col1 li{
+    color: white;
+    margin-bottom: 2rem;
+}
+.col1 a:hover{
+    color: #5DD62C; 
+}
+.col1 .btn-tweet{
+    color: black;
+    text-decoration: none;
+    background-color: #5DD62C;
+    padding: 6% 32%; 
+    border-radius: 28px;
+}
+.col1 .btn-tweet:hover{
+    color: white;
+    box-shadow: 1px 5px 85px #5DD62C;
+}
+.col1 .btn-live{
+    color: #5DD62C;
+} 
+.col1 .btn-live:hover{
+    color: white;
+}
+.col1 .btn-nolive{
+    color: white;
+}
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments */
+    width: 100%;
+}
+.usertitle {
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+    padding-right: 65%;
+}
+.flecheimg {
+    width: 17px;
+    height: 14px;
+    margin-right: 30px;
+    margin-top: 4%;
+}
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+.titleusername {
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    top: -2px;
+}
+.postcount {
+    font-size: 12px;
+    color: #aaa;
+}
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+}
+.logo_user{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -4rem; /* Ajustement */
+}
+.logo_user .img_logo{
+    width: 134px;
+    height: 134px;
+    border-radius: 100px;
+    border: 4px solid white;
+    margin-left: 4%;
+}
+.profile-container .btn_edit{
+    width: 20%;
+    display: flex;
+    color: #5DD62C;
+    background-color: transparent;
+    padding: 0.8% 2%;
+    border-radius: 28px;
+    border: 1px solid #5DD62C;
+    white-space: nowrap;
+    margin-left: 70%;
+}
+.btn_edit:hover{
+    color: white;
+    box-shadow: 1px 5px 85px #5DD62C;
+}
+.bio {
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+    margin-top: 10px; 
+    margin-left: 4%;
+}
+
+.bio{
+    font-size: 12px;
+    color: #aaa;
+}  
+.bio span{
+    margin-bottom: 10px; 
+}
+.user-title-bio{
+    font-size:  19px;
+    color: white;
+}
+.bio_user{
+    font-size: 18px;
+    color: white;
+}
+.join_date{
+    justify-content:safe;
+}
+.bio span strong{
+    color: #5DD62C;
+}
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.btn-account {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem; /* Espacement entre bio et boutons */
+}
+
+.btn-col2 {
+    flex: 1;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+
+}
+.btn-col2:hover {
+    border-bottom: 3px solid #5DD62C;
+}
+
+
+
+.col3{
+    align-items: center;
+    margin-bottom: 35%;
+}
+.col3 input{
+    background-color: #5DD62C; 
+    color: white;
+    padding: 12px 72px;
+    border-radius: 22px;
+    border: none;    
+}
+.col3 input:focus{
+    border:#5DD62C;
+    box-shadow: 1px 5px 85px #5DD62C;
+}
+
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 79.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 616px;
+    /* height: 500px; /* Hauteur ajustée */
+    background: rgba(30, 47, 51, 0.95);
+    padding: 40px;
+    border-radius: 0;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    margin-top: 30px;}.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.popup textarea {
+    width: 99.5%;
+    height: 150px;
+    border: 1px solid #5dd62c;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 16px;
+    background: white;
+    color: #1e2f33;
+    resize: none;
+}
+.popup input[type="file"] {
+    width: 99.5%;
+    padding: 5px;
+    background: #151734;
+    color: white;
+    border-radius: 0;
+    border: 1px solid #5dd62c;
+}
+.popup button {
+    width: 99.5%;
+    background: #5dd62c;
+    color: #1e2f33;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.popup button:hover {
+    background: #4caf20;
+}
+.close {
+    display: inline-block;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 2s ease-in-out;
+    position: absolute; /* Assure que le bouton est positionné */
+    right: 17px; /* Place à gauche */
+    top: 3px; /* Ajuste la hauteur */
+}
+.close:hover {
+    color: red;
+    transform: rotate(160deg);}
+.popup h2 {
+    position: relative;
+    top: -20px; /* Déplace le texte vers le haut */
+    text-align: center; /* Centrer le titre si besoin */
+}/* --- Ajustement de l'embed des tweets --- */
+.tweets-container {
+    width: 100%; /* Permet d'occuper toute la largeur de col2 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tweet-embed {
+    width: 100%; /* Permet d'occuper toute la largeur de col2 */
+    max-width: 100%; /* Assure qu'il ne s'étend pas plus que la colonne */
+    background: transparent;
+    color: white;
+    border-radius: 0;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}/* --- En-tête du tweet --- */
+.tweet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 15px;
+}/* --- Nom de l'utilisateur --- */
+.tweet-username {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+    flex-grow: 1;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}/* --- Bouton fermer (croix) --- */
+.tweet-close {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+}/* --- Contenu du tweet --- */
+.tweet-content {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left; /* Aligne naturellement le texte */
+    word-wrap: break-word; /* Coupe les mots longs */
+    overflow-wrap: break-word; /* Alternative pour une meilleure compatibilité */
+    white-space: normal; /* Permet au texte de passer à la ligne */
+    max-width: 100%; /* Garde le texte dans la colonne */
+    display: block; /* Assure un bon affichage */
+    line-height: 1.4; /* Espacement correct pour la lisibilité */
+}/* --- Image du tweet --- */
+.tweet-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black; /* Optionnel : Ajoute un fond pour éviter un effet vide */
+}
+.tweet-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Affiche l'image entière sans la couper */
+    border-radius: 0; /* Garde les coins nets */
+}
+.tweet-date{
+    font-size: 10px;
+    color: #aaa;
+}

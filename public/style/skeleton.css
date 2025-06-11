@@ -1,0 +1,120 @@
+/* Skeleton Loader */
+.skeleton-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,#151734 9%, #303472 68%,#151734 97%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.skeleton-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.skeleton-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Barre de navigation gauche */
+.skeleton-col1 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+
+}
+
+.skeleton-btn {
+    width: 180px;
+    height: 40px;
+    background: linear-gradient(90deg, #222846 25%, #3c4272 50%, #222846 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite linear;
+    border-radius: 15px;
+    margin-top: 20%;
+}
+
+/* Profil au centre */
+.skeleton-col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: #5DD62C 1px solid;
+    border-left: #5DD62C 1px solid;
+    width: 100%;
+} 
+
+.skeleton-banner {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(90deg, #222846 25%, #3c4272 50%, #222846 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite linear;
+}
+
+.skeleton-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #222846;
+    margin-top: -50px;
+    border: 4px solid white;
+}
+
+.skeleton-text {
+    width: 60%;
+    height: 16px;
+    background: linear-gradient(90deg, #222846 25%, #3c4272 50%, #222846 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite linear;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.skeleton-bio {
+    width: 80%;
+    height: 12px;
+    background: linear-gradient(90deg, #222846 25%, #3c4272 50%, #222846 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite linear;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+/* Barre de recherche */
+.skeleton-col3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skeleton-search {
+    width: 200px;
+    height: 35px;
+    background: linear-gradient(90deg, #222846 25%, #3c4272 50%, #222846 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite linear;
+    border-radius: 22px;
+    margin-bottom: 100%;
+}
+
+/* Animation */
+@keyframes loading {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* Masquer le contenu réel */
+.real-content {
+    display: none;
+}

@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: 0.1s, color 0.1s;
+}  
+.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+.toggle-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background: #444;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
