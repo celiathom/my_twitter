@@ -23,15 +23,19 @@ class Login {
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
             if ($user) {
-                // Suppression des echo pour éviter l'erreur de header
+                // Debugging output
+                echo "Entered password: " . $this->password . "<br>";
+                echo "Stored password: " . $user['password'] . "<br>";
+
+                // Direct string comparison since passwords are stored in plain text
                 if ($this->password === $user['password']) {
                     $this->userId = $user['id'];
                     return true;
                 } else {
-                    // Mot de passe incorrect
+                    echo "Password does not match.<br>";
                 }
             } else {
-                // Utilisateur non trouvé
+                echo "User not found.<br>";
             }
 
             return false;

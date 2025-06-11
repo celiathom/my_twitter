@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/Views/style/style.css">
 </head>
 <body>
 
@@ -16,11 +16,12 @@
     </div>
 </div> -->
 
+
 <?php
 require_once "./Views/LoginView.php"; 
 // require_once "Views/RegisterView.php"; 
 ?>
 <!-- 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html> -->

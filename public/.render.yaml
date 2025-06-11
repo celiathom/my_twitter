@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: my-twitter
-    env: php
-    plan: free
-    rootDir: public
-    buildCommand: ""
-    startCommand: ""
